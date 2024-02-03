@@ -1,0 +1,80 @@
+<!DOCTYPE >
+<html>
+<head>
+	<title>my calculator</title>
+	<script>
+	function fun(){
+		var k=f.t.value;
+		var l=k.slice(0,k.length-1)
+		f.t.value=l
+	}
+	</script>
+	<style>
+		#b{
+			height:50px;
+			width:50px;
+			font-size:25px;
+			margin:10px;
+			color:red;
+		}
+		#tb{
+			margin-top:5px;
+			height:60px;
+			width:280px;
+			font-size:30px;
+			background-color:yellow;
+			
+		}
+		div{
+			text-align:center;
+			border:solid 5px blue;
+			height:600px;
+			width:300px;
+			background-color:black;
+		}
+		h1{
+		color:cyan;
+		text-decoration:underline;
+		}
+	</style>
+</head>
+<body>
+<center>
+	<div>
+		<h1>Simple Calculator</h1>
+		<form name="f">
+			<input  id="tb" type="text" name="t" value=" "/><br>
+			<br>
+			<input id="b" type="button" value="*" onclick="t.value+=value"/>
+			<input id="b" type="button" value="/" onclick="t.value+=value"/>
+			<input id="b" type="button" value="-" onclick="t.value+=value"/>
+			<br>
+			<input id="b" type="button" value="7" onclick="t.value+=value"/>
+			<input id="b" type="button" value="8" onclick="t.value+=value"/>
+			<input id="b" type="button" value="9" onclick="t.value+=value"/>
+			<br>
+			
+			<input id="b" type="button" value="4" onclick="t.value+=value"/>
+			<input id="b" type="button" value="5" onclick="t.value+=value"/>
+			<input id="b" type="button" value="6" onclick="t.value+=value"/>
+			<br>
+			
+			<input id="b" type="button" value="1" onclick="t.value+=value"/>
+			<input id="b" type="button" value="2" onclick="t.value+=value"/>
+			<input id="b" type="button" value="3" onclick="t.value+=value"/>
+			<br>
+			
+			<input id="b" type="button" value="<" onclick="fun()"/>
+			<input id="b" type="button" value="0" onclick="t.value+=value"/>
+			<input id="b" type="button" value="=" onclick="t.value=eval(t.value)"/>
+			<br>
+
+			<input id="b" type="button" value="." onclick="t.value+=value"/>
+			<input id="b" type="button" value="clr" onclick="t.value=' '"/>
+			<input id="b" type="button" value="+" onclick="t.value+=value"/>
+		</form>
+	</div>
+</center>
+</body>
+
+</html>
